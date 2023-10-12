@@ -28,5 +28,17 @@ hi(None, None)        | Hi!
 
 #region bailam
 def hi(name,gender):
-  return 'todo'
+  text=''
+  if gender == 'f':
+    xungho  = 'Ms'
+    text = f'Hi {xungho} {name}!'
+  elif gender == 'm':
+    xungho  = 'Mr'
+    text = f'Hi {xungho} {name}!'
+  elif gender is None and name is not None:
+    xungho  = 'Mr'
+    text = f'Hi {name}!'
+  else :
+    text = 'Hi!'
+  return text
 #endregion bailam
